@@ -71,7 +71,7 @@ function paintWeather5diasData(city, list) {
 }
 
 function getWeatherData(inputVal) {
-    const apiKey = "e279c60dbd83ed07e28c53b28b7ff74e";
+    const apiKey = "";
 	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metrics&lang=es`)
 	.then(response => response.json())
 	.then(data => {
@@ -82,7 +82,7 @@ function getWeatherData(inputVal) {
 }
 
 function getWeather5diasData(inputVal) {
-    const apiKey = "e279c60dbd83ed07e28c53b28b7ff74e";
+    const apiKey = "";
 	fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${inputVal}&appid=${apiKey}&units=metrics&lang=es`)
 	.then(response => response.json())
 	.then(data => {
